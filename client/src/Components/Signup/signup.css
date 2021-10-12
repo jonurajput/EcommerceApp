@@ -1,0 +1,75 @@
+.signup{
+    
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    align-items: center;
+}
+.signup>div{
+    background-color: rgba(0, 81, 255, 0.452);
+width: 35vw;
+
+color: white;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+
+padding: 8px;
+align-items: center;
+}
+input{
+    width: 70%;
+    margin: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    outline: none;
+    background-color: white;
+}
+.bt{
+padding: 7px;
+background-color:tomato;
+font-weight: 600;
+font-size: 17px;
+text-transform: uppercase;
+cursor: pointer;
+margin-top: 10px;
+width: 100px;
+}
+.bt:hover{
+    box-shadow: 6px 6px 7px grey;
+    color: white;
+    background-color: black;
+}
+.form >h2{
+    align-self: start;
+    margin-left: 20px;
+}
+.cc{
+    color: black;
+    text-decoration: none;
+}
+.heading{
+    font-size: 15px;
+}
+@media screen and (max-width:833px) {
+    .signup>div{
+        width: 45vw;
+    }
+}
+@media screen and (max-width:604px) {
+    .signup>div{
+        width: 60vw;
+    }
+}
+@media screen and (max-width:464px) {
+    .signup>div{
+        width: 75vw;
+    }
+    .heading{
+      font-size: 13px;
+      cursor: pointer;
+    }
+}

@@ -1,0 +1,196 @@
+.navbar{
+    
+    position: relative;
+}
+.nav{
+  
+    z-index: 7;
+    overflow: hidden;
+    height: 10vh;
+    position:fixed;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),black);
+    width: 100%;
+    
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    'title search search search cart'
+    'title search search search cart'
+    ;
+}
+.title{
+
+   grid-area: title;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+.menuicon{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+.search{
+   position: relative;
+    padding: 8px;
+   grid-area: search;
+   display: flex;
+   align-items: center;
+   
+}
+
+.search >input{
+    border-radius: 6px;
+    border: none;
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.815);
+}
+.search>input:focus{
+    outline: none;
+}
+.searchicon{
+    position: absolute;
+    left: 21px;
+    color: black;
+   font-size: 16px;
+}
+.carticon{
+    
+    grid-area: cart;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 22px;
+}
+
+
+@media screen and (max-width:591px){
+    .nav{
+        height:11vh;
+        overflow-y: hidden;
+        grid-template-areas: 
+        'title title title cart cart'
+    'search search search search search'
+    ;
+    }
+    .search{
+        margin-top: -15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .menuicon{
+        width: 20px;
+        height: 20px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .carticon{
+       font-size: 16px;
+    }
+}
+
+
+
+.sidebar{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),black);
+    color: black;
+    display: flex;
+  animation-name: sample;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  overflow: hidden;
+ 
+}
+
+@keyframes sample{
+    0%{
+width: 50vw;
+    }
+    100%{
+       width: 100vw;
+    } 
+}
+.sidebar_first{
+height: 100%;
+flex: 0.2;
+color: white;
+background-image: linear-gradient(rgba(0, 0, 0, 0.4),black);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.sidebar_second{
+  height: 100%;
+  flex: 0.8;
+}
+
+@media screen and (max-width:591px){
+    .sidebar_first{
+      flex: 0.6;
+    }
+    .sidebar_second{
+     flex: 0.4;
+    }
+
+}
+
+
+.account{
+   width: 100%;
+   height: 12vh;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 6px;
+   border-bottom: 1px solid grey;
+   background:linear-gradient(to right bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+   color: black;
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: uppercase;
+
+}
+
+.params{
+    
+    width: 100%;
+    margin-top: 14px;
+display: flex;
+align-items: center;
+justify-content:flex-start;
+font-weight: 800;
+font-size: 18px;
+padding: 6px;
+color: white;
+transition: all;
+transition-duration: 0.8s;
+}
+.params:hover{
+    background-color:white;
+    color: black;
+}
+.side_icons{
+    
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+    font-weight: 400;
+}
+
+.hidden{
+    display: none;
+}

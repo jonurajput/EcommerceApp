@@ -1,0 +1,31 @@
+.create{
+    margin-top: 5vh;
+    width: 85vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:10px 10px 10px  rgba(128, 128, 128, 0.476) ;
+}
+.create>input{
+    flex: 1;
+}
+.upload{
+    
+}
+.create>button{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:tomato;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    margin-bottom: 15px;
+}

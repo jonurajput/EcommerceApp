@@ -1,0 +1,140 @@
+.details{
+    margin-top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.top{
+    width: 100%;
+   display: flex;
+   align-items: center;
+
+}
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img{
+    width: 50%;
+    padding: 8px;
+    height:50vh;
+    
+}
+.btn{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    background: tomato;
+    margin-top: 16px;
+    padding: 8px;
+    transition-property:all;
+    transition-duration: 800ms ;
+}
+.btn:hover{
+    background: white;
+    color: tomato;
+    border: 1px solid tomato;
+}
+.span{
+    font-size: 30px;
+}
+.right{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media Screen and (max-width:967px){
+.img{
+    width:60%;
+}
+.btn{
+    width:60%;
+}
+}
+
+@media Screen and (max-width:799px){
+    .img{
+        width:80%;
+    }
+    .btn{
+        width:80%;
+    }
+    }
+
+ @media screen and (max-width:630px){
+     .top{
+         flex-direction: column;
+     }
+     .left{
+         width:100%;
+     }
+     .img{
+         width:50%;
+     }
+     .btn{
+         width:50%;
+     }
+     .right{
+         width: 100%;
+         margin-top: 16px;
+     }
+ }  
+ @media screen and (max-width:491px){
+     .img{
+         width:60%
+     }
+     
+ }
+
+ @media screen and (max-width:345px){
+    .img{
+        width:70%
+    }
+    .btn{
+        margin-top: 16px;
+        padding: 4px;
+        font-size: 11px;
+        width: 60%;
+    }
+}
+.bottom{
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+@media screen and (max-width:677px){
+    .span{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:519px){
+    .span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:315px){
+    .span{
+        font-size: 17px;
+    }
+}
+
+
+
+

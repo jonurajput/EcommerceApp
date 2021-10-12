@@ -1,0 +1,102 @@
+.carousel{
+    
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+.carousel::after{
+    content: "";
+    width: 100vw;
+    height: 90vh;
+    background-color: #ffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(100% 79%, 0% 100%, 100% 100%);
+}
+.carousel>img{
+    width: 100%;
+    height: 100%;
+}
+.heading1{
+position: absolute;
+top: 10vh;
+left: 8vw;
+color: white;
+}
+.heading2{
+    position: absolute;
+    top: 17vh;
+    left: 8vw;
+    color: white;
+}
+.carousel>span{
+    display: block;
+    color: white;
+    position: absolute;
+    left: 9vw;
+    bottom: 25vh;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    transition: all ;
+    transition-duration: 0.8s;
+    background-color: transparent;
+}
+.carousel>span:hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+
+}
+.carousel>h3{
+    position: absolute;
+    left: 9vw;
+    bottom: 6vh;
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+
+@media screen and (max-width:612px) {
+    .carousel{
+         height: 50vh;
+    }
+    .heading1{
+        position: absolute;
+        top: 6vh;
+        left: 8vw;
+        color: white;
+        font-size: 25px;
+        }
+        .heading2{
+            position: absolute;
+            top: 11vh;
+            left: 8vw;
+            color: white;
+            font-size: 25px;
+        }
+}
+
+@media screen and (max-width:445px) {
+    .carousel{
+        height: 40vh;
+    }
+    .heading1{
+        font-size: 21px;
+        top: 3vh;
+    }
+    .heading2{
+        font-size: 21px;
+        top: 8vh;
+    }
+    .carousel>span{
+        bottom: 16vh;
+    }
+    .carousel>h3{
+        font-size: 35px;
+    }
+}

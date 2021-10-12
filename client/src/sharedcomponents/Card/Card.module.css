@@ -1,0 +1,88 @@
+
+.card{
+    margin-top: 30px;
+    margin-left: 20px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    background:transparent;
+    
+    width:17% ;
+    border-top: 8px;
+    box-shadow: 4px 4px 10px  rgba(255, 255, 255, 0.6),
+          -4px -4px 10px rgba(255, 255, 255, 0.308);
+}
+.card:hover{
+    opacity: 0.8;
+    background-color: transparent;
+    
+}
+.image{
+    
+    height: 24vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image >img{
+    height: 100%;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+@media screen and (max-width:1125px){
+    .home{
+        padding: 8px;
+    }
+.card{
+    width: 18%;
+}
+}
+@media screen and (max-width:729px){
+    .card{
+        width: 28%;
+    }
+    .name{
+font-size: 13px;
+    }
+    .price{
+  font-size: 13px;
+    }
+    .discount{
+   font-size: 13px;
+    }
+}
+@media screen and (max-width:559px){
+    .card{
+        width: 30%;
+        min-width: 150px;
+        margin-left: 8px;
+    }
+    .image{
+        height: 20vh;
+    }
+}
+@media screen and (max-width:389px){
+    .card{
+        width: 18%;
+        min-width: 120px;
+    }
+}
+@media screen and (max-width:323px){
+    .card{
+        min-width: 120px;
+    }
+}
+@media screen and (max-width:265px){
+    .card{
+        width: 28%;
+        min-width: 80px;
+    }
+}
